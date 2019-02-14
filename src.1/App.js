@@ -14,7 +14,7 @@ class App extends Component {
 
   componentDidMount(){
     axios
-      .get('/api/posts')
+      .get('http://localhost:4000/api/posts')
       .then(res => {
         this.setState({
           posts: res.data.posts
@@ -35,7 +35,7 @@ class App extends Component {
   addPost = (e, post) => {
     e.preventDefault();
     axios
-      .post('/api/posts', post)
+      .post('http://localhost:4000/api/posts', post)
       .then(res => {
         this.setState(prevState => ({
           posts: [...prevState.posts, res.data.post[0]],
@@ -51,7 +51,7 @@ class App extends Component {
   delPost = (e, id) => {
     e.preventDefault();
     axios
-      .delete(`/api/posts/${id}`)
+      .delete(`http://localhost:4000/api/posts/${id}`)
       .then(res => {
         this.setState(prevState => ({
           posts: prevState.posts.filter(post => post.id !== id)

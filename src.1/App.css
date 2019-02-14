@@ -1,0 +1,79 @@
+.App {
+  text-align: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.App h1 {
+  border-bottom: 2px dashed purple;
+  width: 100%;
+}
+
+.App form {
+  display: flex;
+  flex-direction: column;
+  border: 3px solid lightgray;
+  border-radius: 3px;
+}
+
+.App form input {
+  font-size: 2rem;
+}
+
+.App form textarea {
+  font-size: 2rem;
+}
+
+.App form button {
+  font-size: 2rem;
+  border-radius: 3px;
+}
+
+.App form button:hover {
+  color: lightgray;
+  background: black;
+}
+
+.App .posts-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 50px;
+}
+
+.App .posts-list .post {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border: 1px solid lightgray;
+  width: 100%;
+  padding: 20px;
+}
+
+.App .posts-list h3 {
+  text-align: left;
+  border-bottom: 2px dashed purple;
+  padding: 5px 0;
+  width: 100%;
+}
